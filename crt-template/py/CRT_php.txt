@@ -1,0 +1,16 @@
+//$command = escapeshellcmd('/var/www/html/CRT/HSBC-BC/py/22.py');// pass the file name here and delete teh changed
+$output = exec("python "PATH TO 22.py# $filename");    
+//echo $filename;
+//echo "hi".$output;   
+$uploadOk = 1;
+$FileType = pathinfo($target_file,PATHINFO_EXTENSION);
+
+
+$file = fopen('"PATH TO CSV"', "r") or die("Unable to open file!");
+    
+}
+    
+    else{
+        
+        $file = fopen($_FILES["fileToUpload"]["tmp_name"], "r") or die("Unable to open file!");
+    }

@@ -1,0 +1,77 @@
+ @font-face {
+     font-family: 'Press Start 2p';
+     src: url(../font/PressStart2P-Regular.ttf);
+ }
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.error-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  animation: errorBackground linear 2s alternate infinite;
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, #333333 100%);
+  background-size: 100vmax 100vmax;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.error-message {
+  padding: 5vmin;
+  box-sizing: border-box;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+  font-family: 'Press Start 2p', monospace;
+  text-shadow: .5vmin .5vmin 0 #000000,  -.5vmin .5vmin 0 #000000,  .5vmin -.5vmin 0 #000000,  -.5vmin -.5vmin 0 #000000, .5vmin 0 0 #000000,  -.5vmin 0 0 #000000,  0 -.5vmin 0 #000000,  0 .5vmin 0 #000000;
+  color: #ffffff;
+}
+.error-message h1 {
+  font-size: 10vmin;
+  margin-top: 0;
+  margin-bottom: 5vmin;
+  text-align: center;
+}
+.error-message h2 {
+  font-size: 6vmin;
+  margin: 0;
+  text-align: center;
+}
+.error-message h4 {
+  text-align: center;
+  font-family: Segoe UI;
+  font-weight: normal;
+  font-size: 2vmin;
+  text-shadow: none;
+  margin: 0;
+}
+.error-message a {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff;
+}
+
+#rightclaw-rightpincer {
+  transform-origin: 20% 20%;
+}
+
+svg {
+  height: 60vh;
+  width: 100vw;
+}
+
+@keyframes errorBackground {
+  from {
+    background-color: #ffaaaa;
+  }
+  to {
+    background-color: #aaaaff;
+  }
+}
