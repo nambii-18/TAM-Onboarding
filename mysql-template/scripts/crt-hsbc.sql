@@ -54,15 +54,64 @@ CREATE TABLE `backlog` (
 --
 
 CREATE TABLE `customer` (
-  `CUSTOMER` varchar(20) NOT NULL
+  `CUSTOMER` varchar(20) NOT NULL,
+  `cp_name` varchar(50),
+  `cp1` varchar(50),
+  `cp2` varchar(50),
+  `cp3` varchar(50),
+  `c1_actual` integer,
+  `c1_pres` integer,
+  `c2_actual` integer,
+  `c2_pres` integer,
+  `c3_actual` integer,
+  `c3_pres` integer,
+  `c4_actual` integer,
+  `c4_pres` integer,
+  `t1_actual` integer,
+  `t1_pres` integer,
+  `t2_actual` integer,
+  `t2_pres` integer,
+  `t3_actual` integer,
+  `t3_pres` integer,
+  `t4_actual` integer,
+  `t4_pres` integer,
+  `cc1_actual` integer,
+  `cc1_pres` integer,
+  `cc2_actual` integer,
+  `cc2_pres` integer,
+  `cc3_actual` integer,
+  `cc3_pres` integer,
+  `cc4_actual` integer,
+  `cc4_pres` integer,
+  `e1_actual` integer,
+  `e1_pres` integer,
+  `e2_actual` integer,
+  `e2_pres` integer,
+  `e3_actual` integer,
+  `e3_pres` integer,
+  `e4_actual` integer,
+  `e4_pres` integer,
+  `cd1_actual` integer,
+  `cd1_pres` integer,
+  `cd2_actual` integer,
+  `cd2_pres` integer,
+  `cd3_actual` integer,
+  `cd3_pres` integer,
+  `cd4_actual` integer,
+  `cd4_pres` integer,
+  `cp1_actual` integer,
+  `cp1_pres` integer,
+  `cp2_actual` integer,
+  `cp2_pres` integer,
+  `cp3_actual` integer,
+  `cp3_pres` integer
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `customer`
 --
 
--- INSERT INTO `customer` (`CUSTOMER`) VALUES
--- ('HSBC');
+-- INSERT INTO `customer` (`CUSTOMER`,`cp_name`,`cp1`,`cp2`,  `cp3`,  `c1_actual`,  `c1_pres`,  `c2_actual`,  `c2_pres` ,  `c3_actual`,  `c3_pres`,  `c4_actual`,  `c4_pres`,  `t1_actual`,  `t1_pres` ,  `t2_actual` ,  `t2_pres` ,  `t3_actual` ,  `t3_pres` ,  `t4_actual`,  `t4_pres` ,  `cc1_actual` ,  `cc1_pres`,  `cc2_actual`,  `cc2_pres` ,  `cc3_actual`,  `cc3_pres` ,  `cc4_actual`,  `cc4_pres` ,  `e1_actual`,  `e1_pres` ,  `e2_actual`,  `e2_pres` ,  `e3_actual`,  `e3_pres` ,  `e4_actual`,  `e4_pres` ,  `cd1_actual`,  `cd1_pres` ,  `cd2_actual`,  `cd2_pres` ,`cd3_actual`,`cd3_pres` ,`cd4_actual`,`cd4_pres` ,`cp1_actual`,`cp1_pres` ,`cp2_actual`,`cp2_pres`,`cp3_actual`,`cp3_pres`) VALUES ('HSBC','Custom Param','CP1','CP2','CP3',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 
 -- --------------------------------------------------------
 
