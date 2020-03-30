@@ -13,7 +13,6 @@ tam_dir = '/app/TAM/'
 
 os.system('cd /app && git clone -b master https://github.com/nambii-18/TAM-Onboarding.git')
 # os.rename(dir+'/TAM-Onboarding',dir+'/'+sys.argv[1])
-
 shutil.copytree('/app/TAM-Onboarding/tam-template',tam_dir+'/'+sys.argv[1])
 
 tam_dir = tam_dir + '/'  +sys.argv[1] + '/'
